@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="icon" type="image/x-icon" href="images/logo-icon.svg">
+
+  <title>SIANG</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/ilbs/animate.css">
+  <link rel="stylesheet" href="css/plugins/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.3/sweetalert2.css" />
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Start bg -->
+    <div class="bg"></div>
+    <!-- End bg -->
+
+    <!-- Start Header -->
+    <header class="header js-header">
+      <div class="container">
+        <div class="navbar navbar--collapse u-clearfix">
+          <div class="social-bar navbar__social-bar">
+            <div class="logo">
+              <svg class="logo-svg__item" width="152" height="28" viewBox="0 0 152 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.79394 26.2036L5.79599 26.2043C7.57797 26.8231 9.4335 27.132 11.36 27.132C13.4694 27.132 15.2801 26.8258 16.7751 26.1924L16.7751 26.1924L16.7816 26.1895C18.2633 25.5366 19.3932 24.6534 20.1303 23.5219C20.8799 22.3841 21.256 21.1247 21.256 19.756C21.256 18.1353 20.837 16.7931 19.9433 15.7897C19.0975 14.8165 18.0584 14.0985 16.8336 13.6381C15.6757 13.1705 14.1644 12.7087 12.3078 12.2506L12.3075 12.2505C10.7578 11.869 9.52675 11.5255 8.60961 11.2202C7.7613 10.9066 7.05938 10.4763 6.49377 9.93451C6.00227 9.4197 5.74 8.73756 5.74 7.84C5.74 6.65795 6.21436 5.71092 7.19876 4.96192L7.20004 4.96094C8.20424 4.19177 9.74471 3.768 11.9 3.768C12.9993 3.768 14.1269 3.93968 15.2843 4.28691L15.2843 4.287L15.2932 4.28948C16.4426 4.61133 17.5234 5.10551 18.5368 5.77348L19.0381 6.10388L19.2724 5.55107L20.1724 3.42707L20.3313 3.052L19.9961 2.82055C18.9358 2.08847 17.6844 1.52759 16.2499 1.13138C14.8367 0.710411 13.3862 0.5 11.9 0.5C9.78901 0.5 7.98626 0.818635 6.51147 1.47975C5.05085 2.13451 3.9346 3.03141 3.19958 4.18535C2.47386 5.30075 2.112 6.54739 2.112 7.912C2.112 9.55654 2.53075 10.921 3.42248 11.9478L3.42244 11.9479L3.42738 11.9534C4.29405 12.922 5.3293 13.6507 6.52861 14.1356L6.52857 14.1356L6.53718 14.1389C7.69118 14.5809 9.22434 15.0424 11.1293 15.5247L11.1293 15.5247L11.1342 15.5259C12.7101 15.908 13.9232 16.2623 14.7831 16.5876L14.783 16.5878L14.7943 16.5917C15.6194 16.8816 16.297 17.3001 16.8384 17.8416L16.8384 17.8416L16.8454 17.8484C17.3552 18.3385 17.628 19.0037 17.628 19.9C17.628 21.0493 17.1492 21.9844 16.1401 22.7369C15.1356 23.4623 13.5686 23.864 11.36 23.864C9.81169 23.864 8.31079 23.5987 6.85468 23.0675C5.3939 22.5106 4.24808 21.801 3.39755 20.9504L2.91062 20.4635L2.59836 21.0773L1.55436 23.1293L1.39403 23.4444L1.63772 23.7006C2.64312 24.7576 4.039 25.5857 5.79394 26.2036Z"/>
+								<path d="M35 0.5H34.5V1V26.2V26.7H35H37.664H38.164V26.2V1V0.5H37.664H35Z"/>
+								<path d="M54.772 26.7H55.0955L55.2281 26.4049L58.1195 19.968H71.5125L74.4039 26.4049L74.5365 26.7H74.86H77.668H78.4463L78.1227 25.9921L66.6027 0.79212L66.4692 0.5H66.148H63.52H63.1988L63.0653 0.79212L51.5453 25.9921L51.2217 26.7H52H54.772ZM59.539 16.808L64.816 4.99767L70.093 16.808H59.539Z"/>
+								<path d="M113.56 1V0.5H113.06H110.432H109.932V1V20.0142L94.5876 0.689084L94.4374 0.5H94.196H92H91.5V1V26.2V26.7H92H94.664H95.164V26.2V7.18828L110.472 26.5105L110.622 26.7H110.864H113.06H113.56V26.2V1Z"/>
+								<path d="M146.98 13.316H146.48V13.816V22.0516C144.817 23.1805 142.796 23.756 140.392 23.756C138.429 23.756 136.679 23.3181 135.128 22.4515C133.572 21.5819 132.353 20.3962 131.462 18.8896C130.575 17.3881 130.128 15.701 130.128 13.816C130.128 11.931 130.575 10.2439 131.462 8.74236L131.462 8.74237L131.464 8.73953C132.354 7.21046 133.571 6.02742 135.123 5.1832L135.125 5.18197C136.702 4.31385 138.465 3.876 140.428 3.876C143.382 3.876 145.784 4.81755 147.673 6.68369L148.03 7.03675L148.381 6.67773L150.037 4.98573L150.369 4.64665L150.048 4.29747C148.889 3.03728 147.466 2.09471 145.79 1.46869C144.119 0.8207 142.294 0.5 140.32 0.5C137.701 0.5 135.337 1.06895 133.24 2.21745C131.145 3.36438 129.495 4.96398 128.297 7.01025C127.097 9.03674 126.5 11.3095 126.5 13.816C126.5 16.323 127.097 18.6071 128.296 20.6566L128.298 20.6589C129.496 22.6814 131.147 24.2683 133.24 25.4146C135.336 26.5627 137.688 27.132 140.284 27.132C142.113 27.132 143.86 26.8476 145.522 26.2769C147.187 25.7056 148.637 24.8824 149.866 23.8038L150.036 23.6545V23.428V13.816V13.316H149.536H146.98Z"/>
+								</svg>
+            </div>
+          </div>
+          <div class="nav navbar__nav">
+            <a href="#popup-overlay" class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <div id="popup-overlay" class="popup-menu">
+              <div class="container">
+                <div class="u-clearfix">
+                  <a href="#" class="popup-menu__close">
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+                <ul>
+                  <li><a href="#about" class="popup-menu__item">ABOUT</a></li>
+                  <li><a href="#skill" class="popup-menu__item">SKILL</a></li>
+                  <li><a href="#experience" class="popup-menu__item">EXPERIENCE</a></li>
+                  <li><a href="#work" class="popup-menu__item">MY WORK</a></li>
+                  <li><a href="#contact" class="popup-menu__item">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <section class="main">
+      <!-- Start about -->
+      <div id="about" class="hero">
+        <img src="images/parallax_graphic/tri-blue.svg" class="graphic_001" data-stellar-ratio="0.5" alt="">
+        <img src="images/parallax_graphic/cir-pink-sm.svg" class="graphic_002" alt="">
+        <div class="hero__bg"></div>
+        <div class="container">
+          <div class="hero__content wow bounceInLeft">
+            <h1 class="hero__heading">嗨! <br>我是戴于翔</h1>
+            <a href="#contact" class="btn btn--primary btn--md">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- End about -->
+
+      <!-- Start quote -->
+      <div class="quote bg-color-white lean-bg--top lean-bg--no-margin">
+        <img src="images/parallax_graphic/tri-blue.svg" class="graphic_003 u-xs-hidden" data-stellar-ratio="1.5" alt="">
+        <img class="graphic_004 u-xs-hidden" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-blue.svg" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-push-3">
+              <div class="quote__content">
+                <div class="quote__icon">
+                  <i class="icon-quote-right"></i>
+                </div>
+                <p class="quote__text">我畢業於正修科技大學資管系，擅長使用影像軟體進行設計與編排，也會使用html、css語法進行網頁相關設計， 雖然沒有網頁設計的相關實務經驗，但自認學習能力不差，學習速度也算快，想嘗試挑戰網頁設計和UI/UX這方面的發展。
+                </p>
+                <div class="quote__name"><span>GRAPHIC &</span> WEB
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Enf quote -->
+
+      <!-- Start skill -->
+      <div id="skill" class="skill bg-color-white lean-bg--bottom">
+        <img class="graphic_005" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-md.svg" alt="">
+        <img class="graphic_006" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-grey.svg" alt="">
+        <div class="container">
+          <h2 class="subtitle u-text-center wow bounceInUp">SKILL</h2>
+          <div class="skill-group ">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="0.5s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">HTML</h4>
+                    <p class="skill-card__text">購買線上課程進行學習，個人履歷網頁切版練習。
+                      <br> ‣ Bootstrap框架應用
+                      <br> ‣ js插件呼叫設定
+                    </p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/html.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="1s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">CSS</h4>
+                    <p class="skill-card__text">購買線上課程進行學習，個人履歷網頁設計練習。
+                      <br> ‣ Scss入門應用
+                      <br> ‣ RWD響應式調整
+                    </p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/css.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="1s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Photoshop</h4>
+                    <p class="skill-card__text">負責公司商品照片去背及調整，設計商品DM、活動促銷Banner，廣告宣傳DM製作。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/050-photoshop.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="1.5s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Illustrator
+                    </h4>
+                    <p class="skill-card__text">製作公司印刷品設計、商品標籤貼紙等等，聯絡印刷廠商印製貼紙標籤、廣告傳單。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/048-illustrator.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="1.5s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Premier</h4>
+                    <p class="skill-card__text">影片後製剪輯，過場效果特效、上字幕和動畫添加，公司商品簡易展示影片製作。</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/045-premier.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="2s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">After Effects
+                    </h4>
+                    <p class="skill-card__text">簡易影片動畫製作，模板套用及內容修改</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/044-after-effects.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="skill-card wow bounceInUp" data-wow-delay="2.5s">
+                  <div class="skill-card__inner">
+                    <h4 class="skill-card__title">Figma</h4>
+                    <p class="skill-card__text">網頁設計跟介面規劃，</p>
+                  </div>
+                  <div class="skill-card__icon">
+                    <img class="image" src="images/icon/Figma.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End skill -->
+
+      <!-- Start experience -->
+      <div id="experience" class="experience">
+        <img class="graphic_007 u-xs-hidden" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-purple-lg.svg" alt="">
+        <img class="graphic_008" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-grey.svg" alt="">
+        <img class="graphic_009" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-sm.svg" alt="">
+        <img class="graphic_010 u-xs-hidden" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-greenblue.svg" alt="">
+
+        <div class="container">
+          <h2 class="subtitle u-text-center color-white wow bounceInUp">EXPERIENCE</h2>
+          <div class="timeline-group">
+            <div class="timeline"></div>
+            <div class="timeline-cards">
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow bounceInUp">
+                  <p class="timeline-card__text">
+                    <span class="timeline-card__title">2018/3 - 2019/9</span>
+                    <br><span class="timeline-card__title">源克利企業有限公司：美編/行政助理</span>
+                    <br><span class="timeline-card__info">辦公室內的電腦硬體及周邊設備維護，進行商品的Banner設計編排、製作促銷活動時所需要的DM。</span>
+                    <br>◦更加熟悉PS&AI的操作技巧應用
+                    <br>◦商品的DM如何設計編排
+                    <br>◦對設計排版上有更多認識
+                    <br>◦更多廣告設計的概念
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow bounceInUp">
+                  <p class="timeline-card__text"> <span class="timeline-card__title">2010/6 - 2016/3</span>
+                    <br><span class="timeline-card__title">佑打字行信印刷行：暑期實習</span>
+                    <br><span class="timeline-card__info">客戶公司報表整理，依照客戶指定格式需求調整版面，文件送印前檢查確認是否正確。</span>
+                    <br>◦學習如何用Photoshop傳單編排
+                    <br>◦客戶送印檔案相關設定怎麼確認
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-cards__row">
+                <div class="timeline-card wow bounceInUp">
+                  <p class="timeline-card__text"> <span class="timeline-card__title">2018/3 - 2019/9</span>
+                    <br><span class="timeline-card__title">統一超商：一般職員</span>
+                    <br><span class="timeline-card__info">於門市賣場裡提供商品介紹及銷售服務、門市整理清潔。</span>
+                    <br>◦判斷商品如何抓取訂貨量
+                    <br>◦如何與各式各樣的客人相處
+                    <br>◦了解顧客的需求
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End experience -->
+
+      <!-- Start work -->
+      <div id="work" class="work bg-color-white lean-bg--top lean-bg--bottom">
+        <img class="graphic_011" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-lg.svg" alt="">
+        <img class="graphic_012" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-grey.svg" alt="">
+        <img class="graphic_013" data-stellar-ratio="1.5" src="images/parallax_graphic/tri-blue.svg" alt="">
+        <img class="graphic_014 u-xs-hidden" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-purple-md.svg" alt="">
+        <img class="graphic_015" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-grey.svg" alt="">
+        <img class="graphic_016" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-md.svg" alt="">
+        <img class="graphic_017" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-blue.svg" alt="">
+        <img class="graphic_018" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-sm.svg" alt="">
+        <img class="graphic_019" data-stellar-ratio="1.5" src="images/parallax_graphic/tri-purple.svg" alt="">
+        <img class="graphic_25" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-greenblue.svg" alt="">
+        <div class="container row--end">
+          <h2 class="subtitle u-text-center wow bounceInUp">MY WORKS</h2>
+          <div class="work-list">
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-5">
+                  <div class="imgbox">
+                    <a href="images/works/001.jpg" data-fancybox="gallery">
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/001.jpg');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-pull-5">
+                  <div class="work-item__text work-item__text--right">
+                    <h3 class="work-item__title work-item__title--right">商品促銷DM<br>Promotion flyer</h3>
+                    <p class="work-item__intro">將即期商品進行促銷推廣所設計製作的EDM，</p>
+                    <a href="#" class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-1">
+                  <div class="imgbox">
+                    <a href="images/works/002.jpg" data-fancybox="gallery">
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/002.jpg');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-push-1">
+                  <div class="work-item__text">
+                    <h3 class="work-item__title work-item__title--left">
+                      禮品小卡<br>Gift card</h3>
+                    <p class="work-item__intro">隨出貨商品所附上的實體禮品卡片，提供折扣碼來吸引客戶回流購買，也附有QR code方便找到公司賣場。</p>
+                    <a href="#" class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                  <div class="imgbox">
+                    <a href="images/works/003.jpg" data-fancybox="gallery">
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/003.jpg');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-pull-5">
+                  <div class="work-item__text">
+                    <h3 class="work-item__title work-item__title--right">
+                      節慶商品Banner<br>Advertisement</h3>
+                    <p class="work-item__intro">公司於母親節推出的方案，以康乃馨為主色所設計的Banner。</p>
+                    <a href="#" class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-1">
+                  <div class="imgbox">
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/wavebutton_pr/" href=javascript:;>
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/004.gif');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-push-1">
+                  <div class="work-item__text">
+                    <h3 class="work-item__title">
+                      css樣式練習<br>波浪樣式按鈕</h3>
+                    <p class="work-item__intro">以css練習的互動式按鈕</p>
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/wavebutton_pr/" href=javascript:; class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-5">
+                  <div class="imgbox">
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/Fullpage_pr/" href=javascript:;>
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/005.jpg');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-pull-5">
+                  <div class="work-item__text work-item__text--right">
+                    <h3 class="work-item__title">
+                      插件練習<br>fullpage使用</h3>
+                    <p class="work-item__intro">JS的插件使用練習，插件各項數值調整應用。</p>
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/Fullpage_pr/" href=javascript:; class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-item wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-6 col-sm-push-1">
+                  <div class="imgbox">
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/guideline/" href=javascript:;>
+                      <div class="imgbox__inner imgbox__inner--4-3">
+                        <div class="image" style="background-image: url('images/works/006.jpg');"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-sm-push-1">
+                  <div class="work-item__text">
+                    <h3 class="work-item__title work-item__title--left--2">
+                      Guideline練習<br>簡易Guideline樣式</h3>
+                    <p class="work-item__intro">練習網站簡易的Guideline樣式設計排版。</p>
+                    <a data-fancybox="gallery" data-type=iframe data-src="https://ricks774.github.io/guideline/" href=javascript:; class="text-btn text-btn--primary text-btn--lg">show project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="btn-gruop btn-gruop--center">
+            <a href="#" class="btn btn--secondary btn--md wow fadeInUp">More works</a>
+          </div> -->
+        </div>
+      </div>
+      <!-- End work -->
+
+      <!-- Start contact -->
+      <div id="contact" class="contact">
+        <img class="graphic_020" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-grey.svg" alt="">
+        <img class="graphic_021" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-pink-sm.svg" alt="">
+        <img class="graphic_022" data-stellar-ratio="1.5" src="images/parallax_graphic/tri-blue.svg" alt="">
+        <img class="graphic_023 u-xs-hidden" data-stellar-ratio="1.5" src="images/parallax_graphic/dot-blue.svg" alt="">
+        <img class="graphic_024" data-stellar-ratio="1.5" src="images/parallax_graphic/cir-purple-md.svg" alt="">
+        <div class="container">
+          <h2 class="subtitle u-text-center color-white wow bounceInUp">CONTACT</h2>
+          <form action="javascript:GoogleForm();" class="form wow fadeInUp" id="form">
+            <label for="">姓名</label>
+            <input name="Name" type="text">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="">電話</label>
+                <input name="Tel" type="tel">
+              </div>
+              <div class="col-sm-6">
+                <label for="">電子信箱</label>
+                <input name="Email" type="email">
+              </div>
+            </div>
+            <label for="">留言</label>
+            <textarea name="Message" cols="30" rows="10"></textarea>
+            <div class="btn-group btn-gruop--center form__btn-gruop">
+              <button onclick="alertChang()" type="submit" class="btn btn--md btn--primary">送出</button>
+            </div>
+          </form>
+          <div class="divide-text wow fadeInUp">or</div>
+          <div class="info">
+            <div class="info__email wow fadeInUp">
+              <a href="mailTo:ricks774@gmail.com">ricks774@gmail.com</a>
+            </div>
+            <br>
+            <div class="info__phone wow fadeInUp">
+              <a href="tel:+886-972750590">0972-750-590</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End contact -->
+
+    </section>
+    <!-- End main -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="final-text">Photo by Simone Hutsch on Unsplash</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
+
+  <!-- JS -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+  <script src="js/plugins/wow/wow.min.js"></script>
+  <script src="js/plugins/jquery.fancybox.min.js"></script>
+  <script src="js/plugins/jquery.stellar.min.js"></script>
+  <script src="js/cutoms.js"></script>
+</body>
+
+</html>

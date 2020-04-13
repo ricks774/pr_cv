@@ -910,6 +910,7 @@
 .work {
   padding-top: 80px;
   padding-bottom: 120px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -999,6 +1000,7 @@
 .contact {
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {

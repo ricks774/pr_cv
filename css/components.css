@@ -602,7 +602,7 @@
 
 @media (max-width: 768px) {
   .hero__heading {
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 
@@ -624,15 +624,24 @@
   .hero__bg {
     background-size: 320px;
   }
+  .hero__content .btn--md {
+    font-size: 16px;
+    line-height: 36px;
+    height: 36px;
+    font-weight: 400;
+    border-radius: 24px;
+    padding: 0 30px;
+  }
+  .hero__heading {}
 }
 
 @media (max-width: 480px) {
   .hero__bg {
-    background-size: 200px;
+    background-size: 170px;
   }
 }
 
-
+@
 /*-------------------------*/
 
 
@@ -948,6 +957,7 @@
 }
 
 .work-item__intro {
+  font-family: 'Noto Sans TC', sans-serif;
   font-size: 16px;
   line-height: 32px;
 }
@@ -1017,6 +1027,7 @@
 .form textarea {
   padding: 8px 16px;
   display: inline-block;
+  font-family: 'Noto Sans TC', sans-serif;
   border: 2px solid #f3f4f5;
   border-radius: 4px;
   vertical-align: middle;
@@ -1040,6 +1051,7 @@
   margin-bottom: 8px;
   display: inline-block;
   vertical-align: middle;
+  font-family: 'Noto Sans TC', sans-serif;
   color: #f3f4f5;
 }
 
@@ -1247,4 +1259,19 @@
 .graphic_25 {
   top: 95%;
   right: 5%;
+}
+
+@media (max-width:768px) {
+  .graphic_001 {
+    top: -5%;
+    left: 1%;
+  }
+  .graphic_024 {
+    top: 60%;
+    right: -20%;
+  }
+  .graphic_25 {
+    top: 94%;
+    right: -15%;
+  }
 }

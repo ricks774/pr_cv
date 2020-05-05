@@ -910,7 +910,7 @@
 .work {
   padding-top: 80px;
   padding-bottom: 120px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media (max-width: 768px) {
